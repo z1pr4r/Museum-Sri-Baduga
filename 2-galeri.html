@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Museum Sri Baduga</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="Aset/0icon.png">
+    </head>
+    <body class="bck-glr">
+        <table width="100%" border="0">
+            <tr>
+                <td>
+                    <img class="logo" src="Aset/0logo.png">
+                </td>
+                <td>
+                    <div class="BarMenu">
+                        <ul align="right">
+                            <li><a href="1-index.html">     Beranda     </a></li>
+                            <li><a href="2-galeri.html">    Galeri      </a></li>
+                            <li><a href="3-4-jadwal.html">   Jadwal     </a></li>
+                            <li><a href="3-tentang.html">   Tentang     </a></li>
+                            <li><a href="4-masuk.html">     Masuk       </a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="s-ft">
+            <h1 class="jdl-sr-glr"> Galeri Museum </h1>
+            <div class="kmpln-ft">
+                <div class="ft">    <img src="Aset/2-batu.png"       alt="">    </div>
+                <div class="ft">    <img src="Aset/2-dulu.png"       alt="">    </div>
+                <div class="ft">    <img src="Aset/2-gamelan.png"    alt="">    </div>
+                <div class="ft">    <img src="Aset/2-kereta.png"     alt="">    </div>
+                <div class="ft">    <img src="Aset/2-mahkota.png"    alt="">    </div>
+                <div class="ft">    <img src="Aset/2-pasangan.png"   alt="">    </div>
+                <div class="ft">    <img src="Aset/2-patung.png"     alt="">    </div>
+                <div class="ft">    <img src="Aset/2-uang.png"       alt="">    </div>
+                <div class="ft">    <img src="Aset/2-bambu.png"      alt="">    </div>
+                <div class="ft">    <img src="Aset/2-gamelan.png"    alt="">    </div>
+            </div>
+            <div class="pou-img">
+                <span>&times;</span>
+                <img src="Aset/2-batu.png" alt="">
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.kmpln-ft img').forEach(
+            image =>{
+                image.onclick = () => {
+                    document.querySelector('.pou-img').style.display = 'block';
+                    document.querySelector('.pou-img img').src = image.getAttribute('src');
+                }
+            }
+            );
+
+            document.querySelector('.pou-img span').onclick = () => {
+                document.querySelector('.pou-img').style.display = 'none';
+            }
+        </script>
+    </body>
+</html>

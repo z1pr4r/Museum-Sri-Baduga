@@ -1,0 +1,576 @@
+/*BarMenu*/
+    img.logo {
+        width   : 60px;
+        height  : 70px;
+        padding : 0 7px;
+    }
+
+    .BarMenu ul li {
+        vertical-align  : top;
+        list-style      : none;
+        display         : inline-block;
+        margin          : 0 15px;
+        position        : relative;
+    }
+
+    .BarMenu ul li a {
+        text-decoration : none;
+        color           : #ffffff;
+    }
+
+    .BarMenu ul li ::after {
+        content     : '';
+        height      : 3px;
+        width       : 0;
+        background  : rgb(235, 157, 0);
+        left        : 0;
+        bottom      : -10px;
+        position    : absolute;
+        transition  : 0.3s;
+    }
+
+    .BarMenu ul li :hover::after {
+        width: 100%;
+    }
+
+    
+
+/*Index*/
+    .bck-index {
+        background-image    : url(Aset/1-Bck-SBDG1edit.jpg);
+        background-repeat   : no-repeat;
+        background-size     : 100%;
+        margin              : auto;
+    }
+
+    .tbl-idx {
+        padding : 8px;
+    }
+
+    .isi-idx {
+        width       : 100%;
+        position    : absolute;
+        top         : 50%;
+        transform   : translateY(-50%);
+        text-align  : center;
+        color       : #f5cd47;
+        font-size   : 25px;
+        display     : inline-block;
+    }
+
+    .tmbl-idx{
+        width           : 200px;
+        padding         : 15px 0;
+        text-align      : center;
+        margin          : 20px 10px;
+        border-radius   : 25px;
+        border          : 2px solid #f5cd47;
+        background      : transparent;
+        color           : #ffffff;
+        cursor          : pointer;
+        position        : relative;
+        overflow        : hidden;
+    }
+
+    .spn-idx {
+        background      : #f5cd47;
+        height          : 100%;
+        width           : 0;
+        border-radius   : 25px;
+        position        : absolute;
+        left            : 0;
+        bottom          : 0;
+        z-index         : -1;
+        transition      : 0.5s;
+    }
+
+    .tmbl-idx:hover .spn-idx {
+        width : 100%;
+    }
+    
+    .tmbl-idx:hover {
+        border  : none;
+        color   : #000000;
+    }
+
+
+
+/*Galeri*/
+    .bck-glr {
+        background-image    : url(Aset/2-Bck-Depan.png);
+        background-repeat   : no-repeat;
+        background-size     : 100%;
+    }
+
+    .s-ft h1 {
+        font-size       : 40px;
+        font-family     : Verdana, Geneva, Tahoma, sans-serif;
+        font-weight     : 200px;
+        padding         : 15px;
+        color           : #f5cd47;
+        text-align      : center;
+    }
+
+    .s-ft {
+        position    : relative;
+    }
+
+    .s-ft .kmpln-ft {
+        display         : flex;
+        flex-wrap       : wrap;
+        gap             : 15px;
+        justify-content : center;
+        padding         : 15px;
+    }
+    
+    .s-ft .kmpln-ft .ft {
+        height      : 250px;
+        width       : 350px;
+        border      : 3px solid#fff;
+        box-shadow  : 0px 15px rgba(0, 0, 0, .1);
+        overflow    : hidden;
+        cursor      : pointer;
+    }
+
+    .s-ft .kmpln-ft .ft img {
+        height      : 100%;
+        width       : 100%;
+        object-fit  : cover;
+        transition  : .2s linear;
+    }
+
+    .s-ft .kmpln-ft .ft:hover img {
+        transform : scale(1.15);
+    }
+
+    .s-ft .pou-img {
+        position    : fixed;
+        top         : 0;
+        left        : 0;
+        background  : rgba(0, 0, 0,.9);
+        height      : 100%;
+        width       : 100%;
+        z-index     : 100;
+        display     : none;
+    }
+
+    .s-ft .pou-img span {
+        position    : absolute;
+        top         : 0;
+        right       : 10px;
+        font-size   : 60px;
+        font-weight : bolder;
+        color       : #fff;
+        cursor      : pointer;
+        z-index     : 100;
+    }
+
+    .s-ft .pou-img img {
+        position        : absolute;
+        top             : 50%;
+        left            : 50%;
+        transform       : translate(-50%, -50%);
+        border          : 2px solid #fff;
+        border-radius   : 2px;
+        width           : 750px;
+        object-fit      : cover;
+    }
+    
+    @media (max-width:768px) {
+        .s-ft .pou-img {
+            width : 95%;
+        }
+    }
+
+    .jdl-sr-glr {
+        position : relative;
+    }
+
+    .jdl-sr-glr::after {
+        content         : "";
+        position        : absolute;
+        left            : 36%;
+        height          : 60%;
+        width           : 30%;
+        background      : #6d7172;
+        border-left     : 2px solid #f5cd47;
+        animation       : typing 2s steps(20) infinite;
+    }
+ 
+    @keyframes typing {
+        100% {
+            left    : 61%;
+            width   : 5%;
+        }
+    }
+
+
+       
+/*Jadwal*/
+    .bck-jdwl {
+        background-image    : url(Aset/3-Bck-Jauh.png);
+        background-repeat   : no-repeat;
+        background-size     : 100%;
+    }
+
+    .tp-tb {
+        background-color    : rgba(0, 0, 0, 0.5);
+        color               : #fff;
+        margin              : auto;
+        width               : 40%;
+        font-size           : 24px;
+    }
+
+    .tp-tb tr th {
+        color               : #f5cd47;
+        background-color    : #161616;
+    }
+
+    .tp-tb {
+        background-color    : rgba(0, 0, 0, 0.5);
+        color               : #fff;
+        margin              : auto;
+        width               : 40%;
+        font-size           : 24px;
+        padding             : 10px;
+        border-radius       : 10px;
+    }
+
+    .tp-tb-2 {
+        background-color    : rgba(0, 0, 0, 0.5);
+        color               : #fff;
+        margin              : auto;
+        width               : 30%;
+        font-size           : 24px;
+    }
+
+    .tp-tb tr th {
+        color               : #f5cd47;
+        background-color    : #161616;
+    }
+
+    .tp-tb-2 tr th {
+        color               : #f5cd47;
+        background-color    : #161616;
+    }
+
+    .tp-jdl {
+        font-weight     : lighter;
+        font-weight     : bolder;
+        color           : #f5cd47;
+        text-align      : center;
+        font-size       : 55px;
+    }
+
+
+
+       
+/*Beli*/
+    .bck-beli {
+        background          : url(Aset/3-Bck-Depan.png);
+        background-repeat   : no-repeat;
+        background-size     : 100%; 
+    }
+
+    .isi-bl {
+        background-color    : #212121;
+        width               : 500px;
+        padding             : 25px;
+        margin              : 25px auto 0;
+        box-shadow          : 0px 0px 20px rgba(0, 0, 0, 0.5);
+        border-radius       : 10px;
+        font-family         : Arial, Helvetica, sans-serif;
+        color               : #fff;
+    }
+    .isi-bl h2 {
+        background          : #242424;
+        color               : #f5cd47;
+        text-align          : center;
+        font-size           : 35px;
+        
+    }
+
+    .in-bl {
+        margin-bottom       : 0px;
+        width               : 100%;
+        position            : relative;
+        display             : flex;
+        flex-direction      : row;
+        padding             : 5px 0;
+    }
+
+    .in-bl-bx {
+        width               : 100%;
+        margin-right        : 12px;
+        position            : relative;
+    }
+
+    .in-bl-bx:last-child {
+        margin-right        : 0;
+    }
+
+    .in-bl-bx .nama{
+        padding             : 14px 10px 14px 50px;
+        width               : 88%;
+        background-color    : #fcfcfc;
+        border              : 1px solid #0003;
+        outline             : none;
+        letter-spacing      : 0px;
+        transition          : 0.3s;
+        border-radius       : 3px;
+        color               : #333;
+    }
+
+    .in-bl-bx button {
+        width               : 100%;
+        background-color    : #f5cd47;
+        color               : #0a0a0a;
+        border              : none;
+        padding             : 15px;
+        border-right        : 4px;
+        font-size           : 16px;
+        transition          : all 0.3s ease;
+        border-radius       : 8px;
+    }
+
+    .in-bl-bx button {
+        cursor              : pointer;
+        background-color    : #f5cd47;
+    }
+
+    .plh-bl {
+        border              : none;
+        appearance          : none;
+        padding             : 15px 30px 15px 15px;
+        width               : 100%;
+        color               : #000000;
+        background-color    : #ffffff;
+        font-size           : 15px;
+        font-family         : Arial, Helvetica, sans-serif;
+        letter-spacing      : 2px;
+        border-radius       : 5px;
+    }
+
+
+       
+/*Tentang*/
+    .bck-ttg {
+        background-image    : url(Aset/3-Bck-Teras.png);
+        background-repeat   : no-repeat;
+        background-size     : 100%;
+    }
+
+    .pt-sub {
+        width : 100%;
+    }
+
+    .pt-is {
+        width       : 80%;
+        display     : block;
+        margin      : auto;
+        padding-top : 100px;
+    }
+
+    .pt-ssub {
+        float       : left;
+        width       : 55%;
+    }
+
+    .img-sub {
+        float       : right;
+        width       : 40%;
+        padding     : 30px 5px;
+    }
+
+    .img-sub img {
+        width       : 100%;
+        height      : auto;
+    }
+
+    .pt-ssub img {
+        width       : 100%;
+        height      : auto;
+    }
+
+    .pt-ssub .pt-jdl {
+        text-transform  : uppercase;
+        font-size       : 28px;
+        text-align      : center;
+        color           : #f5cd47;
+    }
+
+    .pt-ssub .p-is h3 {
+        margin-top  : 20px;
+        color       : #e0e0e0;
+        font-size   : 21px;
+    }
+
+    .pt-ssub .p-is p {
+        margin-top  : 10px;
+        font-family : sans-serif;
+        font-size   : 18px;
+        line-height : 1.5;
+        color       : #e0e0e0;
+    }
+
+    .pt-ssub .p-is .btn-slngkpny {
+        padding : 15px 0px;
+    }
+
+    .pt-ssub .p-is .btn-slngkpny a {
+        background-color    : #161616;
+        padding             : 12px 40px;
+        text-decoration     : none;
+        color               : #fff;
+        font-size           : 25px;
+        letter-spacing      : 1.5px;
+    }
+
+    .pt-ssub .p-is .btn-slngkpny a:hover {
+        background-color    : #f5cd47;
+        color               : #000000;
+    }
+
+    .pt-ssub .btn-scl {
+        margin      : 40px 0px;
+        display     : flex;
+        width       : 250px;
+        height      : 250px;
+    }
+
+    .pt-ssub .btn-scl li {
+        list-style  : none;
+        padding     : 0 10px;
+    }
+
+    @media screen and (max-width : 768px) {
+        .pt-sub{
+            width       : 80%;
+            display     : block;
+            margin      : auto;
+            padding-top : 100px;
+        }
+    }
+
+    .pt-sub {
+        float       : none;
+        width       : 100%;
+        display     : block;
+        margin      : auto;
+    }
+
+
+
+/*Login*/
+    .bck-lgn {
+        background-image    : url(Aset/4-Bck-SBDGedit.jpg);
+        background-repeat   : no-repeat;
+        background-size     : 100%;
+
+    }
+
+    .InLog{
+        width           : 420px;
+        background      : #f5cd47;
+        color           : #000000;
+        border-radius   : 20px;
+        padding         : 60px 50px;
+        margin          : auto;
+        display         : grid;
+    }
+
+    .InLog h1 {
+        font-size   : 36px;
+        text-align  : center;
+    }
+
+    .InLog .InBox {
+        width       : 100%;
+        height      : 50px;
+        margin      : 30px 0;
+    }
+
+    .InBox input {
+        width           : 100%;
+        height          : 100%;
+        background      : transparent;
+        border          : none;
+        outline         : none;
+        border          : 2px solid rgb(0, 0, 0);
+        border-radius   : 40px;
+        font-size       : 16px;
+        color           : #000000;
+        
+    }
+
+    .InBox input::placeholder {
+        color   : #000000;
+    }
+
+    .InBox i {
+        position    : absolute;
+        right       : 20px;
+        top         : 50%;
+        transform   : translateY(-50%);
+        font-size   : 20px;
+    }
+
+    .InLog .ReFor {
+        display         : flex;
+        justify-content : space-between;
+        font-size       : 14.5px;
+        margin          : -15px 0 15px;
+    }
+
+    .ReFor label input{
+        accent-color    : #fff;
+        margin-right    : 3px;
+    }
+
+    .ReFor a {
+        color           : #ff0000;
+        text-decoration : none;
+    }
+
+    .ReFor a:hover {
+        text-decoration : underline;
+    }
+
+    .InLog .btn {
+        width           : 100%;
+        height          : 45px;
+        background      : #fff;
+        border          : none;
+        outline         : none;
+        border-radius   : 40px;
+    }
+
+    .InLog .btn {
+        width           : 100%;
+        height          : 45px;
+        background      : #fff;
+        border          : none;
+        outline         : none;
+        border-radius   : 40px;
+        box-shadow      : 0 0 10px rgba(0, 0, 0, .1);
+        cursor          : pointer;
+        font-size       : 16px;
+        color           : #333;
+        font-weight     : 600;
+    }
+
+    .InLog .pndftrn {
+        font-size   : 14.5px;
+        text-align  : center;
+        margin      : 20px 0 15px;
+    }
+
+    .pndftrn p a {
+        color           : #ff0000;
+        text-decoration : none;
+        font-weight     : 600;
+    }
+
+    .pndftrn p a:hover {
+        text-decoration : underline;
+    }
